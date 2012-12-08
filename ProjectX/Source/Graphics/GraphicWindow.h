@@ -1,6 +1,7 @@
 #ifndef GRAPHICWINDOW_H
 #define GRAPHICWINDOW_H
 
+#include <Graphics.hpp>
 
 class GraphicWindow
 {
