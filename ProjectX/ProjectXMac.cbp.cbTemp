@@ -37,23 +37,8 @@
 			<Add library="sfml-window" />
 			<Add library="sfml-system" />
 		</Linker>
-		<Unit filename="Source/Game.cpp" />
-		<Unit filename="Source/Game.h" />
-		<Unit filename="Source/Game/GameObject.cpp" />
-		<Unit filename="Source/Game/GameObject.h" />
-		<Unit filename="Source/GameStates/GameState.cpp" />
-		<Unit filename="Source/GameStates/GameState.h" />
-		<Unit filename="Source/GameStates/GameStateManager.cpp" />
-		<Unit filename="Source/GameStates/GameStateManager.h" />
-		<Unit filename="Source/GraphicObject.cpp" />
-		<Unit filename="Source/GraphicObject.h" />
-		<Unit filename="Source/Graphics/GraphicObject.cpp" />
-		<Unit filename="Source/Graphics/GraphicObject.h" />
-		<Unit filename="Source/Graphics/GraphicWindow.cpp" />
-		<Unit filename="Source/Graphics/GraphicWindow.h" />
-		<Unit filename="Source/Input/InputManager.cpp" />
-		<Unit filename="Source/Input/InputManager.h" />
 		<Unit filename="cb.bmp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
