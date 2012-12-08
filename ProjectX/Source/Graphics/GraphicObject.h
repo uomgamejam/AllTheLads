@@ -1,10 +1,9 @@
 #ifndef GRAPHICOBJECT_H
 #define GRAPHICOBJECT_H
 
-#include <../Game/GameObject.h>
 
 
-class GraphicObject : public GameObject
+class GraphicObject //: public GameObject
 {
     public:
         GraphicObject();

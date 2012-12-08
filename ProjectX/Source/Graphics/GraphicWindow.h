@@ -1,7 +1,7 @@
 #ifndef GRAPHICWINDOW_H
 #define GRAPHICWINDOW_H
 
-#include <Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 class GraphicWindow
 {
