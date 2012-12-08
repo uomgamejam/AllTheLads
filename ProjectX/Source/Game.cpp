@@ -1,11 +1,28 @@
 #include "Game.h"
 
-Game::Game()
+Game::Game(int width, int height, std::string title) : gfx(width, height, 32, title),
+    gsm(), im()
 {
-    //ctor
+
+    // DO NOTHING
+
 }
 
 Game::~Game()
 {
-    //dtor
 }
+
+
+void Game::Run()
+{
+
+    while (!gfx.IsClosing())
+    {
+
+        // Handle input
+        im.HandleInput(&gfx);
+
+    }
+
+}
+

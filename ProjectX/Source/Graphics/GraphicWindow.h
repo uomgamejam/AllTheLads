@@ -6,10 +6,19 @@
 class GraphicWindow
 {
     public:
-        GraphicWindow();
+        GraphicWindow(int width, int height, int bpp, std::string title);
         virtual ~GraphicWindow();
+        sf::RenderWindow* GetSFWindow();
+        void SetClosing();
+        bool IsClosing();
     protected:
     private:
+        sf::RenderWindow window;
+        int winW;
+        int winH;
+        int winBpp;
+        std::string winTitle;
+        bool isClosing;
 };
 
 #endif // GRAPHICWINDOW_H

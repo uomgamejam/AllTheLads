@@ -2,10 +2,34 @@
 
 InputManager::InputManager()
 {
-    //ctor
+    // DO NOTHING
 }
 
 InputManager::~InputManager()
 {
-    //dtor
+    // DO NOTHING
+}
+
+void InputManager::HandleInput(GraphicWindow *window)
+{
+
+    sf::Event event;
+
+    while (window->GetSFWindow()->pollEvent(event))
+    {
+
+        switch (event.type)
+        {
+
+        case sf::Event::Closed:
+            window->SetClosing();
+            break;
+
+        default:
+            break;
+
+        }
+
+    }
+
 }
