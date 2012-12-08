@@ -1,0 +1,19 @@
+int fallingBlocks()
+{
+  bool gameRunning = true;
+  unsigned int framesBetweenBlocks = 5*FPS;
+  unsigned int framesUntilBlocksSpeedChange = 30*FPS;
+  unsigned int currentFrame = 0;
+  
+  while(gameRunning)
+  {
+    if(currentFrame == framesBetweenBlocks)
+      addBlock();
+    else if(currentFrame == framesUntilBlocksSpeedChange)
+      framesBetweenBlocks--;
+    
+    updateGame();
+    displayGame();
+    currentFrame++;
+  }
+}
