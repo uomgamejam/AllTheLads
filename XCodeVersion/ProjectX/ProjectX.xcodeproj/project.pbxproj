@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5397B61673B6EB00156F1F /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397A51673B6EB00156F1F /* GameObject.cpp */; };
+		1A5397B71673B6EB00156F1F /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397A71673B6EB00156F1F /* Game.cpp */; };
+		1A5397B81673B6EB00156F1F /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397AA1673B6EB00156F1F /* GameState.cpp */; };
+		1A5397B91673B6EB00156F1F /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397AC1673B6EB00156F1F /* GameStateManager.cpp */; };
+		1A5397BA1673B6EB00156F1F /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397AF1673B6EB00156F1F /* GraphicObject.cpp */; };
+		1A5397BB1673B6EB00156F1F /* GraphicWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397B11673B6EB00156F1F /* GraphicWindow.cpp */; };
+		1A5397BC1673B6EB00156F1F /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5397B41673B6EB00156F1F /* InputManager.cpp */; };
 		A5651BD11673B27A00354658 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BD01673B27A00354658 /* main.cpp */; };
 		A5651BD31673B27A00354658 /* ProjectX.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5651BD21673B27A00354658 /* ProjectX.1 */; };
-		A5651BEE1673B37F00354658 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BDB1673B37F00354658 /* GameObject.cpp */; };
-		A5651BEF1673B37F00354658 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BDD1673B37F00354658 /* Game.cpp */; };
-		A5651BF01673B37F00354658 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BE01673B37F00354658 /* GameState.cpp */; };
-		A5651BF11673B37F00354658 /* GameStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BE21673B37F00354658 /* GameStateManager.cpp */; };
-		A5651BF21673B37F00354658 /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BE41673B37F00354658 /* GraphicObject.cpp */; };
-		A5651BF31673B37F00354658 /* GraphicObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BE71673B37F00354658 /* GraphicObject.cpp */; };
-		A5651BF41673B37F00354658 /* GraphicWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BE91673B37F00354658 /* GraphicWindow.cpp */; };
-		A5651BF51673B37F00354658 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5651BEC1673B37F00354658 /* InputManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,25 +32,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A5397A51673B6EB00156F1F /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		1A5397A61673B6EB00156F1F /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		1A5397A71673B6EB00156F1F /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		1A5397A81673B6EB00156F1F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		1A5397AA1673B6EB00156F1F /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		1A5397AB1673B6EB00156F1F /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		1A5397AC1673B6EB00156F1F /* GameStateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStateManager.cpp; sourceTree = "<group>"; };
+		1A5397AD1673B6EB00156F1F /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
+		1A5397AF1673B6EB00156F1F /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
+		1A5397B01673B6EB00156F1F /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
+		1A5397B11673B6EB00156F1F /* GraphicWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicWindow.cpp; sourceTree = "<group>"; };
+		1A5397B21673B6EB00156F1F /* GraphicWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicWindow.h; sourceTree = "<group>"; };
+		1A5397B41673B6EB00156F1F /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		1A5397B51673B6EB00156F1F /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		A5651BCC1673B27A00354658 /* ProjectX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectX; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5651BD01673B27A00354658 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A5651BD21673B27A00354658 /* ProjectX.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ProjectX.1; sourceTree = "<group>"; };
-		A5651BDB1673B37F00354658 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
-		A5651BDC1673B37F00354658 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
-		A5651BDD1673B37F00354658 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		A5651BDE1673B37F00354658 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		A5651BE01673B37F00354658 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
-		A5651BE11673B37F00354658 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
-		A5651BE21673B37F00354658 /* GameStateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameStateManager.cpp; sourceTree = "<group>"; };
-		A5651BE31673B37F00354658 /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
-		A5651BE41673B37F00354658 /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
-		A5651BE51673B37F00354658 /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
-		A5651BE71673B37F00354658 /* GraphicObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicObject.cpp; sourceTree = "<group>"; };
-		A5651BE81673B37F00354658 /* GraphicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
-		A5651BE91673B37F00354658 /* GraphicWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicWindow.cpp; sourceTree = "<group>"; };
-		A5651BEA1673B37F00354658 /* GraphicWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicWindow.h; sourceTree = "<group>"; };
-		A5651BEC1673B37F00354658 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
-		A5651BED1673B37F00354658 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +62,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5397A31673B6EB00156F1F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A5397A41673B6EB00156F1F /* Game */,
+				1A5397A71673B6EB00156F1F /* Game.cpp */,
+				1A5397A81673B6EB00156F1F /* Game.h */,
+				1A5397A91673B6EB00156F1F /* GameStates */,
+				1A5397AE1673B6EB00156F1F /* Graphics */,
+				1A5397B31673B6EB00156F1F /* Input */,
+			);
+			name = Source;
+			path = ../../../ProjectX/Source;
+			sourceTree = "<group>";
+		};
+		1A5397A41673B6EB00156F1F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				1A5397A51673B6EB00156F1F /* GameObject.cpp */,
+				1A5397A61673B6EB00156F1F /* GameObject.h */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		1A5397A91673B6EB00156F1F /* GameStates */ = {
+			isa = PBXGroup;
+			children = (
+				1A5397AA1673B6EB00156F1F /* GameState.cpp */,
+				1A5397AB1673B6EB00156F1F /* GameState.h */,
+				1A5397AC1673B6EB00156F1F /* GameStateManager.cpp */,
+				1A5397AD1673B6EB00156F1F /* GameStateManager.h */,
+			);
+			path = GameStates;
+			sourceTree = "<group>";
+		};
+		1A5397AE1673B6EB00156F1F /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				1A5397AF1673B6EB00156F1F /* GraphicObject.cpp */,
+				1A5397B01673B6EB00156F1F /* GraphicObject.h */,
+				1A5397B11673B6EB00156F1F /* GraphicWindow.cpp */,
+				1A5397B21673B6EB00156F1F /* GraphicWindow.h */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		1A5397B31673B6EB00156F1F /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				1A5397B41673B6EB00156F1F /* InputManager.cpp */,
+				1A5397B51673B6EB00156F1F /* InputManager.h */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 		A5651BC11673B27A00354658 = {
 			isa = PBXGroup;
 			children = (
@@ -85,66 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				A5651BD01673B27A00354658 /* main.cpp */,
+				1A5397A31673B6EB00156F1F /* Source */,
 				A5651BD21673B27A00354658 /* ProjectX.1 */,
-				A5651BD91673B37F00354658 /* Source */,
 			);
 			path = ProjectX;
-			sourceTree = "<group>";
-		};
-		A5651BD91673B37F00354658 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A5651BDA1673B37F00354658 /* Game */,
-				A5651BDD1673B37F00354658 /* Game.cpp */,
-				A5651BDE1673B37F00354658 /* Game.h */,
-				A5651BDF1673B37F00354658 /* GameStates */,
-				A5651BE41673B37F00354658 /* GraphicObject.cpp */,
-				A5651BE51673B37F00354658 /* GraphicObject.h */,
-				A5651BE61673B37F00354658 /* Graphics */,
-				A5651BEB1673B37F00354658 /* Input */,
-			);
-			name = Source;
-			path = ../../../AllTheLads/ProjectX/Source;
-			sourceTree = "<group>";
-		};
-		A5651BDA1673B37F00354658 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				A5651BDB1673B37F00354658 /* GameObject.cpp */,
-				A5651BDC1673B37F00354658 /* GameObject.h */,
-			);
-			path = Game;
-			sourceTree = "<group>";
-		};
-		A5651BDF1673B37F00354658 /* GameStates */ = {
-			isa = PBXGroup;
-			children = (
-				A5651BE01673B37F00354658 /* GameState.cpp */,
-				A5651BE11673B37F00354658 /* GameState.h */,
-				A5651BE21673B37F00354658 /* GameStateManager.cpp */,
-				A5651BE31673B37F00354658 /* GameStateManager.h */,
-			);
-			path = GameStates;
-			sourceTree = "<group>";
-		};
-		A5651BE61673B37F00354658 /* Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				A5651BE71673B37F00354658 /* GraphicObject.cpp */,
-				A5651BE81673B37F00354658 /* GraphicObject.h */,
-				A5651BE91673B37F00354658 /* GraphicWindow.cpp */,
-				A5651BEA1673B37F00354658 /* GraphicWindow.h */,
-			);
-			path = Graphics;
-			sourceTree = "<group>";
-		};
-		A5651BEB1673B37F00354658 /* Input */ = {
-			isa = PBXGroup;
-			children = (
-				A5651BEC1673B37F00354658 /* InputManager.cpp */,
-				A5651BED1673B37F00354658 /* InputManager.h */,
-			);
-			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,14 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5651BD11673B27A00354658 /* main.cpp in Sources */,
-				A5651BEE1673B37F00354658 /* GameObject.cpp in Sources */,
-				A5651BEF1673B37F00354658 /* Game.cpp in Sources */,
-				A5651BF01673B37F00354658 /* GameState.cpp in Sources */,
-				A5651BF11673B37F00354658 /* GameStateManager.cpp in Sources */,
-				A5651BF21673B37F00354658 /* GraphicObject.cpp in Sources */,
-				A5651BF31673B37F00354658 /* GraphicObject.cpp in Sources */,
-				A5651BF41673B37F00354658 /* GraphicWindow.cpp in Sources */,
-				A5651BF51673B37F00354658 /* InputManager.cpp in Sources */,
+				1A5397B61673B6EB00156F1F /* GameObject.cpp in Sources */,
+				1A5397B71673B6EB00156F1F /* Game.cpp in Sources */,
+				1A5397B81673B6EB00156F1F /* GameState.cpp in Sources */,
+				1A5397B91673B6EB00156F1F /* GameStateManager.cpp in Sources */,
+				1A5397BA1673B6EB00156F1F /* GraphicObject.cpp in Sources */,
+				1A5397BB1673B6EB00156F1F /* GraphicWindow.cpp in Sources */,
+				1A5397BC1673B6EB00156F1F /* InputManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +293,7 @@
 				A5651BD81673B27A00354658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
