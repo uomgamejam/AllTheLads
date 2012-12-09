@@ -26,6 +26,7 @@ void InputManager::HandleInput(GraphicWindow *window)
             break;
 
         default:
+            gsm->GetCurrentState()
             break;
 
         }

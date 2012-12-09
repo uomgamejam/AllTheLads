@@ -1,9 +1,12 @@
 #ifndef GAMESTATEMANAGER_H
 #define GAMESTATEMANAGER_H
 
+#include <iostream>
+
 #include <GameStates/GameState.h>
 #include <GameStates/SplashScreenState.h>
 #include <GameStates/GameLogoState.h>
+#include <GameStates/MainMenuState.h>
 
 class GameStateManager
 {

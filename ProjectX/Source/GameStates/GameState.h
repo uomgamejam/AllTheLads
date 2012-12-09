@@ -15,6 +15,7 @@ class GameState
         virtual void ExitState(){};
         virtual void DoLogic(){};
         virtual void Draw(GraphicWindow *gfx){};
+        virtual void HandleInput(sf::Event event){};
     protected:
         std::list<GameObject> objectsInScene;
     private:

@@ -15,7 +15,7 @@ class ATLLogoObject : public GameObject
     protected:
     private:
         int opacity;
-        int currentTime;
+        int currentFrames;
         int transitionTime;
         int transitionStepTime;
         int nextTransitionTime;

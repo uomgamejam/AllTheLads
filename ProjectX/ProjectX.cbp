@@ -9,18 +9,17 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/ProjectX" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/SFML/SFML-2.0-rc/include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-s-d" />
 					<Add library="sfml-window-s-d" />
 					<Add library="sfml-system-s-d" />
-					<Add directory="C:/SFML/SFML-2.0-rc/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -31,39 +30,48 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/SFML/SFML-2.0-rc/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="sfml-graphics-s" />
 					<Add library="sfml-window-s" />
 					<Add library="sfml-system-s" />
-					<Add directory="C:/SFML/SFML-2.0-rc/lib" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-DSFML_STATIC" />
-			<Add directory="C:/SFML/SFML-2.0-rc/include" />
+			<Add directory="SFML/include" />
+			<Add directory="C:/Users/Danny/Documents/GitHub/AllTheLads/ProjectX/Source" />
 		</Compiler>
 		<Linker>
-			<Add directory="C:/SFML/SFML-2.0-rc/lib" />
+			<Add directory="SFML/lib" />
 		</Linker>
 		<Unit filename="Source/Game.cpp" />
 		<Unit filename="Source/Game.h" />
+		<Unit filename="Source/GameStates/GameLogoState.cpp" />
+		<Unit filename="Source/GameStates/GameLogoState.h" />
 		<Unit filename="Source/GameStates/GameState.cpp" />
 		<Unit filename="Source/GameStates/GameState.h" />
 		<Unit filename="Source/GameStates/GameStateManager.cpp" />
 		<Unit filename="Source/GameStates/GameStateManager.h" />
+		<Unit filename="Source/GameStates/SplashScreenState.cpp" />
+		<Unit filename="Source/GameStates/SplashScreenState.h" />
 		<Unit filename="Source/Game/GameObject.cpp" />
 		<Unit filename="Source/Game/GameObject.h" />
+		<Unit filename="Source/Graphics/ATLLogoObject.cpp" />
+		<Unit filename="Source/Graphics/ATLLogoObject.h" />
+		<Unit filename="Source/Graphics/GameLogoObject.cpp" />
+		<Unit filename="Source/Graphics/GameLogoObject.h" />
 		<Unit filename="Source/Graphics/GraphicObject.cpp" />
 		<Unit filename="Source/Graphics/GraphicObject.h" />
 		<Unit filename="Source/Graphics/GraphicWindow.cpp" />
 		<Unit filename="Source/Graphics/GraphicWindow.h" />
 		<Unit filename="Source/Input/InputManager.cpp" />
 		<Unit filename="Source/Input/InputManager.h" />
+		<Unit filename="Source/Menu/MenuButton.cpp" />
+		<Unit filename="Source/Menu/MenuButton.h" />
 		<Unit filename="Source/main.cpp" />
 		<Extensions>
 			<code_completion />

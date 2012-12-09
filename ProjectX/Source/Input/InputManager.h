@@ -6,11 +6,12 @@
 class InputManager
 {
     public:
-        InputManager();
+        InputManager(GameStateManager* gsm);
         virtual ~InputManager();
         void HandleInput(GraphicWindow *window);
     protected:
     private:
+        GameStateManager *gameStateMan;
 };
 
 #endif // INPUTMANAGER_H

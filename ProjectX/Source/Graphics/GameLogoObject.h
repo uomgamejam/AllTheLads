@@ -12,6 +12,7 @@ class GameLogoObject : public GameObject
         void DoLogic();
         void Draw(GraphicWindow *window);
         bool IsFinished();
+        void SetOpacity(int opacity);
     protected:
     private:
         int opacity;

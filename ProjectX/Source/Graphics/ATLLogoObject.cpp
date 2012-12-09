@@ -10,14 +10,15 @@ ATLLogoObject::ATLLogoObject()
     texture.loadFromImage(img);
     sprite.setTexture(texture);
     sprite.setColor(sf::Color(255, 255, 255, 0));
+    sprite.setPosition(400 - (img.getSize().x / 2), 300 - (img.getSize().y / 2));
 
     // Set the transition and holding times
-    transitionTime = 1000 * 5;
+    transitionTime = 1000 * 3;
     opacitySteps = 255 / (transitionTime / 50);
     transitionStepTime = 1000 / 50;
     nextTransitionTime = transitionStepTime;
-    holdingTime = 0;
-    currentTime = 0;
+    holdingTime = 50;
+    currentFrames = 0;
     stage = 0;
     opacity = 0;
 
@@ -31,33 +32,30 @@ ATLLogoObject::~ATLLogoObject()
 void ATLLogoObject::DoLogic()
 {
 
+    currentFrames++;
+
     switch (stage)
     {
 
         case 0:
             opacity += opacitySteps;
+            if (opacity > 255) opacity = 255;
             sprite.setColor(sf::Color(255, 255, 255, opacity));
             nextTransitionTime += transitionStepTime;
-            if (opacity >= 255)
-                isFinished = true;
-            break;
-
-        case 1:
-            if (currentTime >= transitionTime + holdingTime)
+            if (opacity == 255)
             {
-                currentTime = 0;
+                currentFrames = 0;
                 stage++;
             }
             break;
 
-        case 2:
-            if (currentTime % transitionStepTime == 0)
+        case 1:
+            //sprite.setColor(sf::Color(255, 255, 255, 255));
+            if (currentFrames >= holdingTime)
             {
-                opacity -= opacitySteps;
-                sprite.setColor(sf::Color(255, 255, 255, opacity));
+                stage++;
+                isFinished = true;
             }
-            //if (opacity == 100)
-            //  stage++;
             break;
 
     }
