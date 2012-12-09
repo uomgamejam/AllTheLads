@@ -15,8 +15,14 @@ class PersonObject: public GameObject
     private:
         int state; // 0 = running, 1 = jumping
         int posY, initialPosY, speedY, gravity;
-        sf::Image img;
-        sf::Texture texture;
+        int currentTexture;
+        int framesSinceLastAnim;
+        sf::Image img1;
+        sf::Image img2;
+        sf::Image img3;
+        sf::Texture texture1;
+        sf::Texture texture2;
+        sf::Texture texture3;
         sf::Sprite sprite;
 };
 
