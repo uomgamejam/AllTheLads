@@ -2,6 +2,8 @@
 #define GAME_H
 
 #include <string>
+#include <sstream>
+#include <windows.h>
 
 #include <Graphics/GraphicWindow.h>
 #include <GameStates/GameStateManager.h>

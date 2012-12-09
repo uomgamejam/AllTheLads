@@ -3,6 +3,7 @@
 
 #include <GameStates/GameState.h>
 #include <GameStates/SplashScreenState.h>
+#include <GameStates/GameLogoState.h>
 
 class GameStateManager
 {
@@ -10,9 +11,12 @@ class GameStateManager
         GameStateManager();
         virtual ~GameStateManager();
         void SetGameState(int gameStateId);
+        GameState* GetCurrentState();
+        void MoveToNextState();
     protected:
     private:
         GameState *currentGameState;
+        int currentGameStateId;
 };
 
 #endif // GAMESTATEMANAGER_H

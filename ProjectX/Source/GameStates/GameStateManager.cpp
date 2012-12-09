@@ -20,9 +20,33 @@ void GameStateManager::SetGameState(int gameStateId)
     {
 
     case 0: // Splash screen
+        currentGameStateId = 0;
         currentGameState = new SplashScreenState();
         break;
 
+
+    }
+
+}
+
+GameState* GameStateManager::GetCurrentState()
+{
+
+    return currentGameState;
+
+}
+
+void GameStateManager::MoveToNextState()
+{
+
+    switch (currentGameStateId)
+    {
+
+    case 0: // Splash screen
+        free(currentGameState);
+        currentGameState = NULL;
+        currentGameState = new GameLogoState();
+        break;
 
     }
 

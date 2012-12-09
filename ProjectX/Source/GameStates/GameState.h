@@ -10,6 +10,7 @@ class GameState
     public:
         GameState();
         virtual ~GameState();
+        virtual bool IsFinished(){return false;};
         virtual void EnterState(){};
         virtual void ExitState(){};
         virtual void DoLogic(){};

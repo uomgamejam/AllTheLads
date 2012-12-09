@@ -8,8 +8,8 @@ class GameObject
     public:
         GameObject();
         virtual ~GameObject();
-        virtual void DoLogic(){};
-        virtual void Draw(GraphicWindow *window){};
+        virtual void DoLogic() {};
+        virtual void Draw(GraphicWindow *window) {};
     protected:
     private:
 };

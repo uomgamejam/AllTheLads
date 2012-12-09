@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1354998697 source:c:\users\danny\documents\github\allthelads\projectx\source\game.cpp
+1355012228 source:c:\users\danny\documents\github\allthelads\projectx\source\game.cpp
 	"Game.h"
 
-1354996659 c:\users\danny\documents\github\allthelads\projectx\source\game.h
+1355011978 c:\users\danny\documents\github\allthelads\projectx\source\game.h
 	<string>
+	<sstream>
+	<windows.h>
 	<Graphics/GraphicWindow.h>
 	<GameStates/GameStateManager.h>
 	<Input/InputManager.h>
@@ -11,32 +13,33 @@
 1355006971 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.cpp
 	"GameObject.h"
 
-1355006979 c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.h
+1355007983 c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.h
 	<Graphics/GraphicWindow.h>
 
 1354986095 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.cpp
 	"GameState.h"
 
-1355006998 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.h
+1355010764 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.h
 	<list>
 	<Game/GameObject.h>
 
-1355006609 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.cpp
+1355011433 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.cpp
 	"GameStateManager.h"
 
-1355006589 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.h
+1355011482 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.h
 	<GameStates/GameState.h>
 	<GameStates/SplashScreenState.h>
+	<GameStates/GameLogoState.h>
 
 1354988280 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicobject.cpp
 	"GraphicObject.h"
 
 1354991515 c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicobject.h
 
-1354997494 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.cpp
+1355007054 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.cpp
 	"GraphicWindow.h"
 
-1354997479 c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.h
+1355007054 c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.h
 	<SFML/Graphics.hpp>
 
 1331748415 c:\sfml\sfml-2.0-rc\include\sfml\graphics.hpp
@@ -373,13 +376,13 @@
 	<string>
 	<vector>
 
-1354997528 source:c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.cpp
+1355007054 source:c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.cpp
 	"InputManager.h"
 
-1354997444 c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.h
+1355007054 c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.h
 	<Graphics\GraphicWindow.h>
 
-1354998549 source:c:\users\danny\documents\github\allthelads\projectx\source\main.cpp
+1355007054 source:c:\users\danny\documents\github\allthelads\projectx\source\main.cpp
 	<SFML/Graphics.hpp>
 	<Game.h>
 
@@ -717,16 +720,29 @@
 	<string>
 	<vector>
 
-1355007021 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\splashscreenstate.h
+1355010791 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\splashscreenstate.h
 	<GameStates\GameState.h>
 	<Graphics\ATLLogoObject.h>
 
-1355006953 c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.h
+1355012548 c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.h
 	<Game\GameObject.h>
 
-1355006469 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.cpp
+1355012685 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.cpp
 	"ATLLogoObject.h"
 
-1355006693 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\splashscreenstate.cpp
+1355010843 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\splashscreenstate.cpp
 	"SplashScreenState.h"
+
+1355011183 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamelogostate.cpp
+	"GameLogoState.h"
+
+1355011223 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamelogostate.h
+	<GameStates\GameState.h>
+	<Graphics\GameLogoObject.h>
+
+1355012753 c:\users\danny\documents\github\allthelads\projectx\source\graphics\gamelogoobject.h
+	<Game\GameObject.h>
+
+1355011306 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\gamelogoobject.cpp
+	"GameLogoObject.h"
 
