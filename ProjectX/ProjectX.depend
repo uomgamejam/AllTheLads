@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1355062312 source:c:\users\danny\documents\github\allthelads\projectx\source\game.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\game.cpp
 	"Game.h"
 
 1355012790 c:\users\danny\documents\github\allthelads\projectx\source\game.h
@@ -13,21 +13,22 @@
 1355006971 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.cpp
 	"GameObject.h"
 
-1355012790 c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.h
+1355066568 c:\users\danny\documents\github\allthelads\projectx\source\game\gameobject.h
+	<iostream>
 	<Graphics/GraphicWindow.h>
 
 1354986095 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.cpp
 	"GameState.h"
 
-1355062990 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.h
+1355064541 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestate.h
 	<iostream>
 	<list>
 	<Game/GameObject.h>
 
-1355064389 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.cpp
 	"GameStateManager.h"
 
-1355064400 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.h
+1355064541 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\gamestatemanager.h
 	<iostream>
 	<GameStates/GameState.h>
 	<GameStates/SplashScreenState.h>
@@ -40,7 +41,7 @@
 
 1354991515 c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicobject.h
 
-1355062210 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.cpp
 	"GraphicWindow.h"
 
 1355007054 c:\users\danny\documents\github\allthelads\projectx\source\graphics\graphicwindow.h
@@ -380,10 +381,10 @@
 	<string>
 	<vector>
 
-1355063029 source:c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.cpp
 	"InputManager.h"
 
-1355062951 c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.h
+1355064541 c:\users\danny\documents\github\allthelads\projectx\source\input\inputmanager.h
 	<iostream>
 	<GameStates\GameStateManager.h>
 	<Graphics\GraphicWindow.h>
@@ -733,7 +734,7 @@
 1355019823 c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.h
 	<Game\GameObject.h>
 
-1355062750 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\atllogoobject.cpp
 	"ATLLogoObject.h"
 
 1355012790 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\splashscreenstate.cpp
@@ -753,7 +754,7 @@
 	"GameLogoObject.h"
 	<iostream>
 
-1355062562 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\mainmenustate.h
+1355064541 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\mainmenustate.h
 	<GameStates\GameState.h>
 	<Graphics\GameLogoObject.h>
 	<Menu\MenuButton.h>
@@ -762,22 +763,29 @@
 	<string>
 	<Game\GameObject.h>
 
-1355063028 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\mainmenustate.cpp
+1355064541 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\mainmenustate.cpp
 	"MainMenuState.h"
 
 1355058349 source:c:\users\danny\documents\github\allthelads\projectx\source\menu\menubutton.cpp
 	"MenuButton.h"
 
-1355064352 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.cpp
+1355065216 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.cpp
 	"GameMap.h"
 
-1355064300 c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.h
+1355064758 c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.h
 	<Game\GameObject.h>
 
-1355064292 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\ingamestate.cpp
+1355066388 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\ingamestate.cpp
 	"InGameState.h"
 
-1355064368 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\ingamestate.h
+1355066405 c:\users\danny\documents\github\allthelads\projectx\source\gamestates\ingamestate.h
 	<Game\GameMap.h>
+	<Graphics/PersonObject.h>
 	<Gamestates\GameState.h>
+
+1355064976 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.cpp
+	"PersonObject.h"
+
+1355066145 c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.h
+	<Game\GameObject.h>
 

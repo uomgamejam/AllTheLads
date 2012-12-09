@@ -2,16 +2,18 @@
 
 PersonObject::PersonObject()
 {
-  stage = 0; // default state is running
-  posX = 10;
-  initialPosX = 10;
-  speedX = 1;
-  posY = 10;
-  initialPosY = 10;
-  speedY = 0;
-  accelerationY = 0; //Change to initial values on the screen
-  img.loafFromFile("Graphics/man.png");
-  sprite.setimage(img);
+    state = 0; // default state is running
+    posY = 310;
+    initialPosY = 310;
+    speedY = 0;
+    gravity = 1;
+
+    img.loadFromFile("Graphics/man.png");
+    img.createMaskFromColor(sf::Color(153, 217, 234));
+    texture.loadFromImage(img);
+    sprite.setTexture(texture);
+
+    sprite.setPosition(368, initialPosY);
 }
 
 
@@ -22,35 +24,45 @@ PersonObject::~PersonObject()
 
 void PersonObject::DoLogic()
 {
-  FPS = 30; //change to game's FPS
-  currentFrames++;
-  switch(stage)
-  {
-    case 0: //Running
-      posX = initialPosX + speedX * (currentFrame / FPS);
-      break;
-    case 1: //Jumping
-      if(posY == 0)
-        stage = 0;
-      else
-      {
-        posX = initialPosX + speedX * (currentFrame / FPS);
-        posY = initialPosY + speedY * (currentFrame / FPS) - 1/2 * accelerationY * accelerationY * (currentFrame / FPS);
-      }
-      break;
-  }
+    if (state == 1)
+    {
+
+        posY -= speedY;
+        speedY -= gravity;
+
+        std::cout << "Pos: ";
+        std::cout << posY;
+        std::cout << ". Speed: ";
+        std::cout << speedY;
+        std::cout << "\n";
+
+        if (posY >= initialPosY)
+        {
+            posY = initialPosY;
+            state = 0;
+        }
+
+        sprite.setPosition(sprite.getPosition().x, posY);
+
+    }
 }
 
 void PersonObject::Draw(GraphicWindow *window)
 {
+
     window->GetSFWindow()->draw(sprite);
+
 }
 
 void PersonObject::Jump()
 {
-  stage = 1; //change the stage to jumping
-  speedY = 2;
+
+    if (state == 0)
+    {
+
+        state = 1;
+        speedY = 14;
+
+    }
+
 }
-
-
- 
