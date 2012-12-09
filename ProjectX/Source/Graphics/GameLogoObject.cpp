@@ -17,7 +17,7 @@ GameLogoObject::GameLogoObject()
     transitionStepTime = 1000 / 50;
     nextTransitionTime = transitionStepTime;
     holdingTime = 0;
-    currentTime = 0;
+    currentFrames = 0;
     stage = 0;
     opacity = 0;
 
@@ -31,6 +31,8 @@ GameLogoObject::~GameLogoObject()
 void GameLogoObject::DoLogic()
 {
 
+    currentFrames++;
+
     switch (stage)
     {
 
@@ -39,25 +41,15 @@ void GameLogoObject::DoLogic()
             sprite.setColor(sf::Color(255, 255, 255, opacity));
             nextTransitionTime += transitionStepTime;
             if (opacity >= 255)
-                isFinished = true;
-            break;
-
-        case 1:
-            if (currentTime >= transitionTime + holdingTime)
             {
-                currentTime = 0;
+                currentFrames = 0;
                 stage++;
             }
             break;
 
-        case 2:
-            if (currentTime % transitionStepTime == 0)
-            {
-                opacity -= opacitySteps;
-                sprite.setColor(sf::Color(255, 255, 255, opacity));
-            }
-            //if (opacity == 100)
-            //  stage++;
+        case 1:
+            if (currentFrames == (50 * 5))
+                isFinished = true;
             break;
 
     }

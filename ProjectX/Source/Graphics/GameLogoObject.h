@@ -15,7 +15,7 @@ class GameLogoObject : public GameObject
     protected:
     private:
         int opacity;
-        int currentTime;
+        int currentFrames;
         int transitionTime;
         int transitionStepTime;
         int nextTransitionTime;
