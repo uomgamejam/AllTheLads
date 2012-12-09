@@ -1,7 +1,11 @@
 #ifndef GAMEMAP_H
 #define GAMEMAP_H
 
+#include <stdlib.h>
+#include <iostream>
+
 #include <Game\GameObject.h>
+#include <Graphics\BlockObject.h>
 
 class GameMap : GameObject
 {
@@ -21,6 +25,7 @@ class GameMap : GameObject
         sf::Sprite cave1;
         sf::Sprite cave2;
         sf::Sprite cave3;
+        BlockObject *block;
 
 };
 

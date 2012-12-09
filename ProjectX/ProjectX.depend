@@ -769,11 +769,14 @@
 1355058349 source:c:\users\danny\documents\github\allthelads\projectx\source\menu\menubutton.cpp
 	"MenuButton.h"
 
-1355065216 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.cpp
+1355069173 source:c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.cpp
 	"GameMap.h"
 
-1355064758 c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.h
+1355069028 c:\users\danny\documents\github\allthelads\projectx\source\game\gamemap.h
+	<stdlib.h>
+	<iostream>
 	<Game\GameObject.h>
+	<Graphics\BlockObject.h>
 
 1355066388 source:c:\users\danny\documents\github\allthelads\projectx\source\gamestates\ingamestate.cpp
 	"InGameState.h"
@@ -783,9 +786,15 @@
 	<Graphics/PersonObject.h>
 	<Gamestates\GameState.h>
 
-1355064976 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.cpp
+1355067885 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.cpp
 	"PersonObject.h"
 
-1355066915 c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.h
+1355067885 c:\users\danny\documents\github\allthelads\projectx\source\graphics\personobject.h
 	<Game\GameObject.h>
+
+1355068946 c:\users\danny\documents\github\allthelads\projectx\source\graphics\blockobject.h
+	<Game\GameObject.h>
+
+1355069227 source:c:\users\danny\documents\github\allthelads\projectx\source\graphics\blockobject.cpp
+	"BlockObject.h"
 

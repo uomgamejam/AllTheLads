@@ -56,6 +56,28 @@ void GameMap::DoLogic()
     //else if (cave3.getPosition().x <= -800
       //  cave3.setPosition(cave2.getPosition().x + 800);
 
+
+    if (block == NULL && (rand() % 10  >= 2))
+    {
+
+        std::cout << "NOTICE: Making new block";
+
+        block = new BlockObject();
+
+    }
+    else if (block != NULL)
+    {
+
+        block->DoLogic();
+
+        if (block->IsOffScreen())
+        {
+            free(block);
+            block = NULL;
+        }
+
+    }
+
 }
 
 void GameMap::Draw(GraphicWindow *gfx)
@@ -66,5 +88,8 @@ void GameMap::Draw(GraphicWindow *gfx)
     gfx->GetSFWindow()->draw(cave1);
     gfx->GetSFWindow()->draw(cave2);
     gfx->GetSFWindow()->draw(cave3);
+
+    if (block != NULL)
+        block->Draw(gfx);
 
 }

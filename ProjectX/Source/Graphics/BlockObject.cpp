@@ -2,43 +2,53 @@
 
 BlockObject::BlockObject()
 {
-  stage = 0;
-  posX = 50;
-  ínitialPosY = 0;
-  posY = 0;
-  accelerationY = 0;
-  img.loadFromFile("Graphics/block.png");
-  sprite.setImage(img);
+    state = 1;
+    posY = 150;
+    initialPosY = 150;
+    speedY = 0;
+    gravity = 1;
+
+    img.loadFromFile("Graphics/block1.png");
+    img.createMaskFromColor(sf::Color(153, 217, 234));
+    texture.loadFromImage(img);
+    sprite.setTexture(texture);
+
+    sprite.setPosition(700, 150);
 }
 
 BlockObject::~BlockObject(){}
 
 void BlockObject::DoLogic()
 {
-  FPS = 30; //change to game's FPS
-  currentFrames++;
-  
-  switch(stage)
-  {
-    case 0: //stopped
-      break;
-    case 1: //Falling
-      if(posY != 0)
-        posY = -1/2 * accelerationY * accelerationY * (currenFrames / FPS);
-      else
-        ~BlockObject();
-      break;
-  }
+
+    if (state == 1)
+    {
+
+        posY -= speedY;
+        speedY -= gravity;
+
+        if (posY >= 342)
+        {
+            posY = 342;
+            state = 0;
+        }
+
+        sprite.setPosition(sprite.getPosition().x, posY);
+
+    }
+
+    sprite.setPosition(sprite.getPosition().x - 4, sprite.getPosition().y);
+
 }
 
-void BlockObject::fall()
-{
-  accelerationY = 2;
-}
-
-void BlockObject::draw(GraphicsWindow *window)
+void BlockObject::Draw(GraphicWindow *window)
 {
   window->GetSFWindow()->draw(sprite);
 }
 
-       
+bool BlockObject::IsOffScreen()
+{
+
+    return sprite.getPosition().x < 0;
+
+}
