@@ -1,8 +1,8 @@
 #include "InputManager.h"
 
-InputManager::InputManager()
+InputManager::InputManager(GameStateManager *gsm)
 {
-    // DO NOTHING
+    gameStateMan = gsm;
 }
 
 InputManager::~InputManager()
@@ -26,7 +26,10 @@ void InputManager::HandleInput(GraphicWindow *window)
             break;
 
         default:
-            gsm->GetCurrentState()
+            //std::cout << "Unknown event - ";
+            //std::cout << event.type;
+            //std::cout << " - passing to current state.\n";
+            gameStateMan->GetCurrentState()->HandleInput(event);
             break;
 
         }

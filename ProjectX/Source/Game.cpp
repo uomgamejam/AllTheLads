@@ -37,7 +37,7 @@ void Game::Run()
     while (!gfx.IsClosing())
     {
 
-        if (next_gfx_tick <= current_ticks)
+        while (next_gfx_tick <= current_ticks)
         {
 
             std::stringstream ss;
@@ -49,12 +49,11 @@ void Game::Run()
             gfx.GetSFWindow()->draw(text1);
             gfx.GetSFWindow()->display();
 
-            next_gfx_tick = current_ticks + GFX_SKIP_TICKS;
-
+            next_gfx_tick += GFX_SKIP_TICKS;
 
         }
 
-        if (next_game_tick <= current_ticks)
+        while (next_game_tick <= current_ticks)
         {
 
             // Handle input
@@ -68,7 +67,7 @@ void Game::Run()
             if (gsm.GetCurrentState()->IsFinished())
                 gsm.MoveToNextState();
 
-            next_game_tick = current_ticks + SKIP_TICKS;
+            next_game_tick += SKIP_TICKS;
 
         }
 

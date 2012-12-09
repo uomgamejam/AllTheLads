@@ -12,10 +12,13 @@ class MainMenuState : public GameState
         MainMenuState();
         virtual ~MainMenuState();
         void Draw(GraphicWindow *gfx);
+        void HandleInput(sf::Event event);
+        bool IsFinished();
     protected:
     private:
         GameLogoObject logo;
         MenuButton startButton;
+        bool isFinished;
 };
 
 #endif // MAINMENUSTATE_H

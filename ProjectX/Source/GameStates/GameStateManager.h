@@ -7,6 +7,7 @@
 #include <GameStates/SplashScreenState.h>
 #include <GameStates/GameLogoState.h>
 #include <GameStates/MainMenuState.h>
+#include <GameStates/InGameState.h>
 
 class GameStateManager
 {

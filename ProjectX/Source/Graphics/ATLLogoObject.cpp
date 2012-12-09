@@ -4,7 +4,6 @@ ATLLogoObject::ATLLogoObject()
 {
 
     // Load the texture
-    bool worked = true;
     img.loadFromFile("Graphics/Splash.png");
     img.createMaskFromColor(sf::Color(153, 217, 234));
     texture.loadFromImage(img);
@@ -21,6 +20,8 @@ ATLLogoObject::ATLLogoObject()
     currentFrames = 0;
     stage = 0;
     opacity = 0;
+
+    isFinished = false;
 
 }
 

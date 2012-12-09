@@ -8,6 +8,7 @@ GraphicWindow::GraphicWindow(int width, int height, int bpp, std::string title) 
     winBpp = bpp;
     winTitle = title;
     isClosing = false;
+    window.setVerticalSyncEnabled(false);
 }
 
 GraphicWindow::~GraphicWindow()

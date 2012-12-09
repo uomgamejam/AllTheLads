@@ -57,24 +57,37 @@ GameState* GameStateManager::GetCurrentState()
 void GameStateManager::MoveToNextState()
 {
 
-    switch (currentGameStateId)
+    if (currentGameState->IsFinished())
     {
 
-    case 0: // Splash screen
-        std::cout << "Moving to next state... 1 (Second splash screen)\n";
-        free(currentGameState);
-        currentGameState = NULL;
-        currentGameStateId = 1;
-        currentGameState = new GameLogoState();
-        break;
+        switch (currentGameStateId)
+        {
 
-    case 1: // Second splash
-        std::cout << "Moving to next state... 2 (Main menu screen)\n";
-        free(currentGameState);
-        currentGameState = NULL;
-        currentGameStateId = 2;
-        currentGameState = new MainMenuState();
-        break;
+        case 0: // Splash screen
+            std::cout << "Moving to next state... 1 (Second splash screen)\n";
+            free(currentGameState);
+            currentGameState = NULL;
+            currentGameStateId = 1;
+            currentGameState = new GameLogoState();
+            break;
+
+        case 1: // Second splash
+            std::cout << "Moving to next state... 2 (Main menu screen)\n";
+            free(currentGameState);
+            currentGameState = NULL;
+            currentGameStateId = 2;
+            currentGameState = new MainMenuState();
+            break;
+
+        case 2: // Main menu
+            std::cout << "Moving to next state... 3 (In-game)\n";
+            free(currentGameState);
+            currentGameState = NULL;
+            currentGameStateId = 3;
+            currentGameState = new InGameState();
+            break;
+
+        }
 
     }
 

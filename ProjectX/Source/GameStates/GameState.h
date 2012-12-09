@@ -1,6 +1,7 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
 
+#include <iostream>
 #include <list>
 
 #include <Game/GameObject.h>
